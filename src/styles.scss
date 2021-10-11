@@ -1,1 +1,20 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import './styles/colors';
+@import './styles/mixins';
+@import './styles/variables';
+// font awesome font
+@import '@fortawesome/fontawesome-free/css/all.css';
+
+html, body { height: 100%; }
+body { 
+    margin: 0; 
+    padding: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif; 
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+li {
+    list-style-type: none;
+}
