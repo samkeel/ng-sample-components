@@ -1,5 +1,17 @@
 <app-toolbar [title]="'Angular Challenge'"></app-toolbar>
 
+<main>
+    <app-main-card
+        [title]="'Accordian'" 
+        [subTitle]="'Components'" 
+        [iconClasses]="'fas fa-info-circle'">
+
+        <app-accordian body [accordianItems]="accordionItems">
+
+        </app-accordian>
+
+    </app-main-card>
+
 <app-main-card 
     [title]="'Card'" 
     [subTitle]="'Components'" 
@@ -9,3 +21,4 @@
 
     <p footer>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis impedit possimus delectus nihil! Amet velit facilis alias distinctio, autem voluptatem eius, eveniet itaque quidem deleniti voluptates mollitia, tempore odio. Quam.</p>
 </app-main-card>
+</main>
