@@ -1,6 +1,18 @@
 <app-toolbar [title]="'Angular Challenge'"></app-toolbar>
 
 <main>
+    <!-- Top of Page -->
+    <app-main-card         
+        [title]="'Top of Page'"
+        [subTitle]="'Components'"
+        [iconClasses]="'fas fa-info-circle'">
+
+        <p body>Scroll 400px down the page to render.</p>
+
+
+
+    </app-main-card>
+
     <!-- Star Ratings -->
     <app-main-card         
         [title]="'Star Ratings'"
@@ -43,4 +55,6 @@
 
         <p footer>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis impedit possimus delectus nihil! Amet velit facilis alias distinctio, autem voluptatem eius, eveniet itaque quidem deleniti voluptates mollitia, tempore odio. Quam.</p>
     </app-main-card>
+
+    <app-top-of-page></app-top-of-page>
 </main>
