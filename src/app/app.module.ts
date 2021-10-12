@@ -8,6 +8,8 @@ import { ToolbarComponent } from './toolbar/toolbar.component';
 import { MainCardComponent } from './components/main-card/main-card.component';
 import { AccordianComponent } from './components/accordian/accordian.component';
 import { ProgressBarComponent } from './components/progress-bar/progress-bar.component';
+import { StarRatingComponent } from './components/star-rating/star-rating.component';
+import { TopOfPageComponent } from './components/top-of-page/top-of-page.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +17,9 @@ import { ProgressBarComponent } from './components/progress-bar/progress-bar.com
     ToolbarComponent,
     MainCardComponent,
     AccordianComponent,
-    ProgressBarComponent
+    ProgressBarComponent,
+    StarRatingComponent,
+    TopOfPageComponent
   ],
   imports: [
     BrowserModule,

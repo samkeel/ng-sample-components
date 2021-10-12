@@ -1,6 +1,16 @@
 <app-toolbar [title]="'Angular Challenge'"></app-toolbar>
 
 <main>
+    <!-- Star Ratings -->
+    <app-main-card         
+        [title]="'Star Ratings'"
+        [subTitle]="'Components'"
+        [iconClasses]="'fas fa-info-circle'">
+
+        <app-star-rating body [rating]="1.75"></app-star-rating>
+
+    </app-main-card>
+
     <!-- Progress bar -->
     <app-main-card 
         [title]="'Progress Bar'"
