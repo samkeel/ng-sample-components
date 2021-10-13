@@ -1,60 +1,7 @@
 <app-toolbar [title]="'Angular Challenge'"></app-toolbar>
 
 <main>
-    <!-- Top of Page -->
-    <app-main-card         
-        [title]="'Top of Page'"
-        [subTitle]="'Components'"
-        [iconClasses]="'fas fa-info-circle'">
-
-        <p body>Scroll 400px down the page to render.</p>
-
-
-
-    </app-main-card>
-
-    <!-- Star Ratings -->
-    <app-main-card         
-        [title]="'Star Ratings'"
-        [subTitle]="'Components'"
-        [iconClasses]="'fas fa-info-circle'">
-
-        <app-star-rating body [rating]="1.75"></app-star-rating>
-
-    </app-main-card>
-
-    <!-- Progress bar -->
-    <app-main-card 
-        [title]="'Progress Bar'"
-        [subTitle]="'Components'"
-        [iconClasses]="'fas fa-info-circle'">
-
-        <app-progress-bar body [value]="progressValue"></app-progress-bar>
-
-        <button footer (click)="progressValue = 75;">Update</button>
-
-    </app-main-card>
-
-    <!-- Accordian -->
-    <app-main-card
-        [title]="'Accordian'" 
-        [subTitle]="'Components'" 
-        [iconClasses]="'fas fa-info-circle'">
-
-        <app-accordian body [accordianItems]="accordionItems"></app-accordian>
-
-    </app-main-card>
-
-    <!-- Card sample -->
-    <app-main-card 
-        [title]="'Card'" 
-        [subTitle]="'Components'" 
-        [iconClasses]="'fas fa-info-circle'">
-
-        <p body>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione a eos cumque minus placeat ducimus incidunt quas deserunt repudiandae harum nihil animi porro, totam itaque voluptatum unde debitis velit excepturi!</p>
-
-        <p footer>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis impedit possimus delectus nihil! Amet velit facilis alias distinctio, autem voluptatem eius, eveniet itaque quidem deleniti voluptates mollitia, tempore odio. Quam.</p>
-    </app-main-card>
-
-    <app-top-of-page></app-top-of-page>
+    <router-outlet></router-outlet>
 </main>
+
+<app-top-of-page></app-top-of-page>

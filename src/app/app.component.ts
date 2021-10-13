@@ -8,19 +8,5 @@ import { AccordionItem } from './components/accordian/accordian-item.interface';
 })
 export class AppComponent {
   title = 'ng-samples';
-  
-  public accordionItems: AccordionItem[] = [
-    {
-      title: 'Example 1',
-      content: 'Example Content 1',
-      isExpanded: false
-    },
-    {
-      title: 'Example 2',
-      content: 'Example Content 2',
-      isExpanded: false
-    }
-  ];
 
-  public progressValue = 25;
 }
