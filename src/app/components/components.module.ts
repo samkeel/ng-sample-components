@@ -8,6 +8,7 @@ import { StarRatingComponent } from './star-rating/star-rating.component';
 import { ProgressBarComponent } from './progress-bar/progress-bar.component';
 import { AccordianComponent } from './accordian/accordian.component';
 import { TopOfPageComponent } from './top-of-page/top-of-page.component';
+import { LoaderComponent } from './loader/loader.component';
 
 
 
@@ -16,7 +17,8 @@ import { TopOfPageComponent } from './top-of-page/top-of-page.component';
     ComponentDocumentationComponent,
     StarRatingComponent,
     ProgressBarComponent,
-    AccordianComponent
+    AccordianComponent,
+    LoaderComponent
   ],
   imports: [
     CommonModule,
