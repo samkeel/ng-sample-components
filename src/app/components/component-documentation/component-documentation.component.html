@@ -1,5 +1,18 @@
 
 
+    <!-- credit card input -->
+    <app-main-card         
+        [title]="'Credit Card Input'"
+        [subTitle]="'Components'"
+        [iconClasses]="'fas fa-info-circle'">
+
+        <div body>
+            <app-credit-card-input [creditCardNumber]="'4321432143214321'" [isReadonly]="false"></app-credit-card-input>
+            <br>
+            <app-credit-card-input [creditCardNumber]="'4321432143214321'" [isReadonly]="true"></app-credit-card-input>
+        </div>
+    </app-main-card>
+
     <!-- Loader -->
     <app-main-card         
         [title]="'Loader'"

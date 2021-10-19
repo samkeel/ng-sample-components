@@ -7,8 +7,9 @@ import { SharedModule } from '../shared/shared.module';
 import { StarRatingComponent } from './star-rating/star-rating.component';
 import { ProgressBarComponent } from './progress-bar/progress-bar.component';
 import { AccordianComponent } from './accordian/accordian.component';
-import { TopOfPageComponent } from './top-of-page/top-of-page.component';
 import { LoaderComponent } from './loader/loader.component';
+import { CreditCardInputComponent } from './credit-card-input/credit-card-input.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 
@@ -18,11 +19,14 @@ import { LoaderComponent } from './loader/loader.component';
     StarRatingComponent,
     ProgressBarComponent,
     AccordianComponent,
-    LoaderComponent
+    LoaderComponent,
+    CreditCardInputComponent
   ],
   imports: [
     CommonModule,
     SharedModule,
+    FormsModule,
+    ReactiveFormsModule,
     RouterModule.forChild(COMPONENT_ROUTES)
   ]
 })
