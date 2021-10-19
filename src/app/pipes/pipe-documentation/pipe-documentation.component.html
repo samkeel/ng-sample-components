@@ -1,1 +1,11 @@
-<p>pipes-documentation works!</p>
+<!-- Truncate -->
+<app-main-card         
+    [title]="'Truncate'"
+    [subTitle]="'Pipes'"
+    [iconClasses]="'fas fa-info-circle'">
+
+    <p body>
+        {{'Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore illum, necessitatibus similique ad eveniet ipsa possimus? Voluptas magnam reiciendis ipsum tenetur, facilis quidem suscipit, odit velit, cumque consectetur nisi repellendus?' | truncate }}
+    </p>
+
+</app-main-card>

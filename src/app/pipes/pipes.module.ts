@@ -4,11 +4,13 @@ import { PipeDocumentationComponent } from './pipe-documentation/pipe-documentat
 import { RouterModule } from '@angular/router';
 import { PIPE_ROUTES } from './pipes.routes';
 import { SharedModule } from '../shared/shared.module';
+import { TruncatePipe } from './truncate/truncate.pipe';
 
 
 @NgModule({
   declarations: [
-    PipeDocumentationComponent
+    PipeDocumentationComponent,
+    TruncatePipe
   ],
   imports: [
     CommonModule,
