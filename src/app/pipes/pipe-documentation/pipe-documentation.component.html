@@ -1,3 +1,17 @@
+<!-- credir card formatter -->
+<app-main-card         
+    [title]="'Credit Card Formatter'"
+    [subTitle]="'Pipes'"
+    [iconClasses]="'fas fa-info-circle'">
+
+    <div body>
+        <p>{{'1111222233334444' | creditCardFormatter}}</p>
+        <p>{{'111111111111111111111111111111' | creditCardFormatter}}</p>
+        <p>{{'a111222233334444' | creditCardFormatter}}</p>
+    </div>
+
+</app-main-card>
+
 <!-- Truncate -->
 <app-main-card         
     [title]="'Truncate'"
