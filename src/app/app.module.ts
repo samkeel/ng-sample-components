@@ -5,30 +5,22 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ToolbarComponent } from './toolbar/toolbar.component';
-import { MainCardComponent } from './components/main-card/main-card.component';
-import { AccordianComponent } from './components/accordian/accordian.component';
-import { ProgressBarComponent } from './components/progress-bar/progress-bar.component';
-import { StarRatingComponent } from './components/star-rating/star-rating.component';
 import { TopOfPageComponent } from './components/top-of-page/top-of-page.component';
 import { RouterModule } from '@angular/router';
-import { ComponentDocumentationComponent } from './components/component-documentation/component-documentation.component';
 import { APP_ROUTES } from './app.routes';
+import { SharedModule } from './shared/shared.module';
 
 @NgModule({
   declarations: [
     AppComponent,
     ToolbarComponent,
-    MainCardComponent,
-    AccordianComponent,
-    ProgressBarComponent,
-    StarRatingComponent,
-    TopOfPageComponent,
-    ComponentDocumentationComponent
+    TopOfPageComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    SharedModule,
     RouterModule.forRoot(APP_ROUTES)
   ],
   providers: [],

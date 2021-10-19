@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { ServiceDocumentationComponent } from './service-documentation/service-documentation.component';
 import { RouterModule } from '@angular/router';
 import { SERVICE_ROUTES } from './services.routes';
+import { SharedModule } from '../shared/shared.module';
 
 
 
@@ -12,6 +13,7 @@ import { SERVICE_ROUTES } from './services.routes';
   ],
   imports: [
     CommonModule,
+    SharedModule,
     RouterModule.forChild(SERVICE_ROUTES)
   ]
 })
