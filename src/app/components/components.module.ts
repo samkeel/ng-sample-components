@@ -10,6 +10,7 @@ import { AccordianComponent } from './accordian/accordian.component';
 import { LoaderComponent } from './loader/loader.component';
 import { CreditCardInputComponent } from './credit-card-input/credit-card-input.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { TwitterPostComponent } from './twitter-post/twitter-post.component';
 
 
 
@@ -20,7 +21,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     ProgressBarComponent,
     AccordianComponent,
     LoaderComponent,
-    CreditCardInputComponent
+    CreditCardInputComponent,
+    TwitterPostComponent
   ],
   imports: [
     CommonModule,
