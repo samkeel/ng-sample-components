@@ -23,5 +23,5 @@ export class FlattenPipePipe implements PipeTransform {
     });
 
     return result;
-  }
+  }   
 }
