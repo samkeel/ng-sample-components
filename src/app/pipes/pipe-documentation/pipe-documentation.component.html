@@ -1,3 +1,16 @@
+<!-- credit card formatter -->
+<app-main-card         
+    [title]="'Filter Term'"
+    [subTitle]="'Pipes'"
+    [iconClasses]="'fas fa-info-circle'">
+
+    <div body>
+            {{ ['Hello', 'world', 'Hello World'] | pipeFilterTerm : 'hello'}}
+    </div>
+
+</app-main-card>
+
+
 <!-- flatten pipe -->
 <app-main-card         
     [title]="'Flatten'"
