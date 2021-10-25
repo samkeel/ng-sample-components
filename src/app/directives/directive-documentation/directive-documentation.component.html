@@ -1,1 +1,15 @@
-<p>directive-documentation works!</p>
+
+<!-- Debounce click - prevent double clicking - only allows a single click, every half a second -->
+    <app-main-card         
+        [title]="'Debounce Click'"
+        [subTitle]="'Directives'"
+        [iconClasses]="'fas fa-info-circle'">
+
+        <div body>
+            <!-- add selector appDebounceClick  -->
+            <button appDebounceClick (debounceClick)="log()">Log</button>
+        </div>
+
+    </app-main-card>
+
+    

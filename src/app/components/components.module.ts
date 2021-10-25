@@ -25,8 +25,7 @@ import { ModalComponent } from './modal/modal.component';
     LoaderComponent,
     CreditCardInputComponent,
     TwitterPostComponent,
-    LinkedinPostComponent,
-    ModalComponent
+    LinkedinPostComponent
   ],
   imports: [
     CommonModule,
