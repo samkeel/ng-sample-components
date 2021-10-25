@@ -1,4 +1,30 @@
-    <!-- Toggle Component -->
+<!-- rich text formatter -->
+<app-main-card         
+    [title]="'Rich Text'"
+    [subTitle]="'Components'"
+    [iconClasses]="'fas fa-info-circle'">
+
+    <div body>
+        <div>
+          <h3>Good Example</h3>
+          <app-rich-text-viewer [htmlText]="'<p>Hello World</p>'"></app-rich-text-viewer>
+        </div>
+   
+        <div>
+          <h3>Empty Example</h3>
+          <app-rich-text-viewer [htmlText]="'   '"></app-rich-text-viewer>
+        </div>
+   
+        <div>
+          <h3>Bad HTML Example</h3>
+          <!-- error in paragraph tag -->
+          <app-rich-text-viewer [htmlText]="'<p> Hello World'"></app-rich-text-viewer>
+        </div>
+      </div>
+
+</app-main-card>
+
+<!-- Toggle Component -->
     <app-main-card         
         [title]="'Toggle'"
         [subTitle]="'Components'"

@@ -1,4 +1,17 @@
-<!-- credit card formatter -->
+<!-- Filter text by terminology -->
+<app-main-card         
+    [title]="'Rich text'"
+    [subTitle]="'Pipes'"
+    [iconClasses]="'fas fa-info-circle'">
+
+    <div body>
+        <div [innerHtml]="html | richText"> </div>
+    </div>
+
+</app-main-card>
+
+
+<!-- Filter text by terminology -->
 <app-main-card         
     [title]="'Filter Term'"
     [subTitle]="'Pipes'"

@@ -8,6 +8,7 @@ import { TruncatePipe } from './truncate/truncate.pipe';
 import { CreditCardFormatterPipe } from './credit-card-formatter/credit-card-formatter.pipe';
 import { FlattenPipePipe } from './flatten-pipe/flatten-pipe.pipe';
 import { PipeFilterTermPipe } from './pipe-filter-term/pipe-filter-term.pipe';
+import { RichTextPipe } from './rich-text/rich-text.pipe';
 
 
 @NgModule({
@@ -16,7 +17,8 @@ import { PipeFilterTermPipe } from './pipe-filter-term/pipe-filter-term.pipe';
     TruncatePipe,
     CreditCardFormatterPipe,
     FlattenPipePipe,
-    PipeFilterTermPipe
+    PipeFilterTermPipe,
+    RichTextPipe
   ],
   imports: [
     CommonModule,
