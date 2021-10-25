@@ -1,5 +1,20 @@
     <!-- modal dialog -->
     <app-main-card         
+        [title]="'Quote'"
+        [subTitle]="'Components'"
+        [iconClasses]="'fas fa-info-circle'">
+
+        <app-quote body 
+            [quote]="'test, test and test again.'"
+            [author]="'Sam Keel'"
+            [occupation]="'Electrical Designer & Software Engineer'"
+        ></app-quote>
+
+
+    </app-main-card>
+
+<!-- modal dialog -->
+    <app-main-card         
         [title]="'Modal Dialog'"
         [subTitle]="'Components'"
         [iconClasses]="'fas fa-info-circle'">

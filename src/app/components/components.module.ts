@@ -13,6 +13,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { TwitterPostComponent } from './twitter-post/twitter-post.component';
 import { LinkedinPostComponent } from './linkedin-post/linkedin-post.component';
 import { ModalComponent } from './modal/modal.component';
+import { QuoteComponent } from './quote/quote.component';
 
 
 
@@ -25,7 +26,8 @@ import { ModalComponent } from './modal/modal.component';
     LoaderComponent,
     CreditCardInputComponent,
     TwitterPostComponent,
-    LinkedinPostComponent
+    LinkedinPostComponent,
+    QuoteComponent
   ],
   imports: [
     CommonModule,
