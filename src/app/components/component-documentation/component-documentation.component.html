@@ -1,4 +1,14 @@
-    <!-- modal dialog -->
+    <!-- Toggle Component -->
+    <app-main-card         
+        [title]="'Toggle'"
+        [subTitle]="'Components'"
+        [iconClasses]="'fas fa-info-circle'">
+
+        <app-toggle body [isOn]="toggleValue"></app-toggle>
+
+    </app-main-card>
+
+    <!-- Quote Component -->
     <app-main-card         
         [title]="'Quote'"
         [subTitle]="'Components'"
@@ -13,7 +23,7 @@
 
     </app-main-card>
 
-<!-- modal dialog -->
+    <!-- modal dialog -->
     <app-main-card         
         [title]="'Modal Dialog'"
         [subTitle]="'Components'"
