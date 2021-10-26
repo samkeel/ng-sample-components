@@ -1,28 +1,40 @@
+<!-- debounce search -->
+    <app-main-card         
+        [title]="'Debounce Search'"
+        [subTitle]="'Components'"
+        [iconClasses]="'fas fa-info-circle'">
+
+        <app-debounce-search body (searchUpdate)="debounceExampleMethod($event)"></app-debounce-search>
+        <!-- <app-debounce-search body></app-debounce-search> -->
+        
+
+    </app-main-card>
+
 <!-- rich text formatter -->
-<app-main-card         
-    [title]="'Rich Text'"
-    [subTitle]="'Components'"
-    [iconClasses]="'fas fa-info-circle'">
+    <app-main-card         
+        [title]="'Rich Text'"
+        [subTitle]="'Components'"
+        [iconClasses]="'fas fa-info-circle'">
 
-    <div body>
-        <div>
-          <h3>Good Example</h3>
-          <app-rich-text-viewer [htmlText]="'<p>Hello World</p>'"></app-rich-text-viewer>
+        <div body>
+            <div>
+                <h3>Good Example</h3>
+                <app-rich-text-viewer [htmlText]="'<p>Hello World</p>'"></app-rich-text-viewer>
+            </div>
+    
+            <div>
+                <h3>Empty Example</h3>
+                <app-rich-text-viewer [htmlText]="'   '"></app-rich-text-viewer>
+            </div>
+    
+            <div>
+                <h3>Bad HTML Example</h3>
+                <!-- error in paragraph tag -->
+                <app-rich-text-viewer [htmlText]="'<p> Hello World'"></app-rich-text-viewer>
+            </div>
         </div>
-   
-        <div>
-          <h3>Empty Example</h3>
-          <app-rich-text-viewer [htmlText]="'   '"></app-rich-text-viewer>
-        </div>
-   
-        <div>
-          <h3>Bad HTML Example</h3>
-          <!-- error in paragraph tag -->
-          <app-rich-text-viewer [htmlText]="'<p> Hello World'"></app-rich-text-viewer>
-        </div>
-      </div>
 
-</app-main-card>
+    </app-main-card>
 
 <!-- Toggle Component -->
     <app-main-card         
