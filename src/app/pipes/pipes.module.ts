@@ -7,7 +7,6 @@ import { SharedModule } from '../shared/shared.module';
 import { TruncatePipe } from './truncate/truncate.pipe';
 import { CreditCardFormatterPipe } from './credit-card-formatter/credit-card-formatter.pipe';
 import { FlattenPipePipe } from './flatten-pipe/flatten-pipe.pipe';
-import { PipeFilterTermPipe } from './pipe-filter-term/pipe-filter-term.pipe';
 import { RichTextPipe } from './rich-text/rich-text.pipe';
 
 
@@ -16,8 +15,7 @@ import { RichTextPipe } from './rich-text/rich-text.pipe';
     PipeDocumentationComponent,
     TruncatePipe,
     CreditCardFormatterPipe,
-    FlattenPipePipe,
-    PipeFilterTermPipe,
+    FlattenPipePipe,    
     RichTextPipe
   ],
   imports: [

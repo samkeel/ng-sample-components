@@ -1,12 +1,21 @@
+<!-- Search List -->
+<app-main-card         
+    [title]="'Search List'"
+    [subTitle]="'Components'"
+    [iconClasses]="'fas fa-info-circle'">
+    
+    <app-search-list body [items]="['Australia', 'Mexico', 'Antarctica']"></app-search-list>
+
+</app-main-card>
+
+
 <!-- debounce search -->
     <app-main-card         
         [title]="'Debounce Search'"
         [subTitle]="'Components'"
         [iconClasses]="'fas fa-info-circle'">
 
-        <app-debounce-search body (searchUpdate)="debounceExampleMethod($event)"></app-debounce-search>
-        <!-- <app-debounce-search body></app-debounce-search> -->
-        
+        <app-debounce-search body (searchUpdate)="debounceExampleMethod($event)"></app-debounce-search>        
 
     </app-main-card>
 
