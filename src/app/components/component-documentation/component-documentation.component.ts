@@ -30,4 +30,10 @@ export class ComponentDocumentationComponent {
     console.log('Component Documentation', value);
   }
 
+  public tabs: { title: string, active: boolean }[] = [
+    { title: 'Tab 1', active: true },
+    { title: 'Tab 2', active: false },
+  ];
+  public selectedTab = 0;
+
 }
