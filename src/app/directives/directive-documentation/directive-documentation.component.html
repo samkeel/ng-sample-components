@@ -1,15 +1,25 @@
+<app-main-card         
+    [title]="'Ripple'"
+    [subTitle]="'Directives'"
+    [iconClasses]="'fas fa-info-circle'">
+
+    <div body>
+        <button appRipple="ripple" style="border: 1px solid black; text-align: center; padding: 10px;">Ripple Button</button>
+    </div>
+
+
+</app-main-card>
 
 <!-- Debounce click - prevent double clicking - only allows a single click, every half a second -->
-    <app-main-card         
-        [title]="'Debounce Click'"
-        [subTitle]="'Directives'"
-        [iconClasses]="'fas fa-info-circle'">
+<app-main-card         
+    [title]="'Debounce Click'"
+    [subTitle]="'Directives'"
+    [iconClasses]="'fas fa-info-circle'">
 
-        <div body>
-            <!-- add selector appDebounceClick  -->
-            <button appDebounceClick (debounceClick)="log()">Log</button>
-        </div>
+    <div body>
+        <button appDebounceClick (debounceClick)="log()">Log</button>
+    </div>
 
-    </app-main-card>
+</app-main-card>
 
     
