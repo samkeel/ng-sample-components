@@ -12,4 +12,10 @@ export class SimpleTableComponent {
     { first: 'Sam 3', last: 'Keel', dob: '05/09/84' },
     { first: 'Sam 4', last: 'Keel', dob: '05/09/84' },
   ];
+
+  @Output() public headerSelected = new EventEmitter< { key: string, value: any }>();
+
+  public headerSelection(key: any, value: any): void {
+    this.headerSelected.emit({value, key});
+  }
 }
