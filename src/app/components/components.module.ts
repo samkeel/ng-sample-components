@@ -23,7 +23,7 @@ import { SimpleTableComponent } from './simple-table/simple-table.component';
 import { PagingComponent } from './paging/paging.component';
 import { TabsComponent } from './tabs/tabs.component';
 import { SortTableComponent } from './sort-table/sort-table.component';
-
+import { EmailFormComponent } from './email-form/email-form.component';
 
 @NgModule({
   declarations: [
@@ -44,7 +44,8 @@ import { SortTableComponent } from './sort-table/sort-table.component';
     SimpleTableComponent,
     PagingComponent,
     TabsComponent,
-    SortTableComponent
+    SortTableComponent,
+    EmailFormComponent
   ],
   imports: [
     CommonModule,
