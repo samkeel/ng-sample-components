@@ -1,4 +1,23 @@
 <app-main-card 
+    [title]="'Form - Dirty guard'" 
+    [subTitle]="'Other - Guard'" 
+    [iconClasses]="'fas fa-info-circle'">
+
+    <div body>
+        <form class="email-form" [formGroup]="form" (ngSubmit)="submit()">
+          <div>
+            <div class="name">
+              <input type="text" placeholder="Your Name" formControlName="name">
+            </div>
+          </div>
+   
+          <button>Submit</button>
+        </form>
+      </div>
+
+</app-main-card>
+
+<app-main-card 
     [title]="'Fade In - Fade Out'" 
     [subTitle]="'Other - Animation'" 
     [iconClasses]="'fas fa-info-circle'">
