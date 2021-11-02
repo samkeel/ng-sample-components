@@ -1,5 +1,28 @@
 <!-- Email-->
 <app-main-card         
+    [title]="'Ribbon'"
+    [subTitle]="'Components'"
+    [iconClasses]="'fas fa-info-circle'">
+    
+    <div body>
+
+        <app-ribbon [content]="'Ribbon'" [location]="ribbonStyle.location" [type]="ribbonStyle.type"></app-ribbon>
+   
+        <button (click)="ribbonStyle.location = RibbonLocation.TopRight">Top-Right</button>
+        <button (click)="ribbonStyle.location = RibbonLocation.TopLeft">Top-Left</button>
+        <button (click)="ribbonStyle.location = RibbonLocation.BottomRight">Bottom-Right</button>
+        <button (click)="ribbonStyle.location = RibbonLocation.BottomLeft">Bottom-Left</button>
+        <button (click)="ribbonStyle.type = RibbonType.Info">Info</button>
+        <button (click)="ribbonStyle.type = RibbonType.Error">Error</button>
+        <button (click)="ribbonStyle.type = RibbonType.Success">Success</button>
+        <button (click)="ribbonStyle.type = RibbonType.Warning">Warning</button>
+   
+      </div>
+
+</app-main-card>
+
+<!-- Email-->
+<app-main-card         
     [title]="'Sort Table'"
     [subTitle]="'Components'"
     [iconClasses]="'fas fa-info-circle'">

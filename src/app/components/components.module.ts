@@ -24,6 +24,7 @@ import { PagingComponent } from './paging/paging.component';
 import { TabsComponent } from './tabs/tabs.component';
 import { SortTableComponent } from './sort-table/sort-table.component';
 import { EmailFormComponent } from './email-form/email-form.component';
+import { RibbonComponent } from './ribbon/ribbon.component';
 
 @NgModule({
   declarations: [
@@ -45,7 +46,8 @@ import { EmailFormComponent } from './email-form/email-form.component';
     PagingComponent,
     TabsComponent,
     SortTableComponent,
-    EmailFormComponent
+    EmailFormComponent,
+    RibbonComponent
   ],
   imports: [
     CommonModule,
