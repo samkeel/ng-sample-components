@@ -1,1 +1,10 @@
-<p>service-documentation works!</p>
+<app-main-card 
+    [title]="'Users'" 
+    [subTitle]="'Services'" 
+    [iconClasses]="'fas fa-info-circle'">
+
+    <div body>
+        <p>{{user | json}}</p>
+    </div>
+
+</app-main-card>
