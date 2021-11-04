@@ -25,6 +25,7 @@ import { TabsComponent } from './tabs/tabs.component';
 import { SortTableComponent } from './sort-table/sort-table.component';
 import { EmailFormComponent } from './email-form/email-form.component';
 import { RibbonComponent } from './ribbon/ribbon.component';
+import { ButtonToggleComponent } from './button-toggle/button-toggle.component';
 
 @NgModule({
   declarations: [
@@ -47,7 +48,8 @@ import { RibbonComponent } from './ribbon/ribbon.component';
     TabsComponent,
     SortTableComponent,
     EmailFormComponent,
-    RibbonComponent
+    RibbonComponent,
+    ButtonToggleComponent
   ],
   imports: [
     CommonModule,
