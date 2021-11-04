@@ -1,25 +1,45 @@
-<app-main-card         
-    [title]="'Ripple'"
-    [subTitle]="'Directives'"
-    [iconClasses]="'fas fa-info-circle'">
+<!-- Element scales when mouse hovers over -->
+<app-main-card
+  [title]="'Scale'"
+  [subTitle]="'Directives'"
+  [iconClasses]="'fas fa-info-circle'"
+>
+  <div
+    body
+    appScale
+    style="
+      width: 100px;
+      height: 100px;
+      background-color: #007acc;
+      margin-left: auto;
+      margin-right: auto;
+    "
+  ></div>
+</app-main-card>
 
-    <div body>
-        <button appRipple="ripple" style="border: 1px solid black; text-align: center; padding: 10px;">Ripple Button</button>
-    </div>
-
-
+<!-- button ripple effect -->
+<app-main-card
+  [title]="'Ripple'"
+  [subTitle]="'Directives'"
+  [iconClasses]="'fas fa-info-circle'"
+>
+  <div body>
+    <button
+      appRipple="ripple"
+      style="border: 1px solid black; text-align: center; padding: 10px"
+    >
+      Ripple Button
+    </button>
+  </div>
 </app-main-card>
 
 <!-- Debounce click - prevent double clicking - only allows a single click, every half a second -->
-<app-main-card         
-    [title]="'Debounce Click'"
-    [subTitle]="'Directives'"
-    [iconClasses]="'fas fa-info-circle'">
-
-    <div body>
-        <button appDebounceClick (debounceClick)="log()">Log</button>
-    </div>
-
+<app-main-card
+  [title]="'Debounce Click'"
+  [subTitle]="'Directives'"
+  [iconClasses]="'fas fa-info-circle'"
+>
+  <div body>
+    <button appDebounceClick (debounceClick)="log()">Log</button>
+  </div>
 </app-main-card>
-
-    
