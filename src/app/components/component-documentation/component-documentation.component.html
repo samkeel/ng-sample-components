@@ -1,3 +1,16 @@
+<!-- Snackbar -->
+<app-main-card         
+    [title]="'Snackbar'"
+    [subTitle]="'Components'"
+    [iconClasses]="'fas fa-info-circle'">
+    
+    <div body>
+        <app-snackbar [message]="'Snackbar show test'"></app-snackbar>
+        <button (click)="snackbarShow()">Show snackbar</button>
+    </div>
+    
+</app-main-card>
+
 <!-- Banner - cut out -->
 <app-main-card         
     [title]="'Button Toggle'"
