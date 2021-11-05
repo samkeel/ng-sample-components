@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { SnackbarService } from '../snackbar/snackbar.service';
 import { User } from '../user/user.model';
 import { UserService } from '../user/user.service';
 
@@ -11,7 +12,10 @@ export class ServiceDocumentationComponent implements OnInit {
   public user = new User();
   public userID = 1;
 
-  constructor(public userService: UserService) {}
+  constructor(
+    public userService: UserService,
+    public snackbarService: SnackbarService
+  ) {}
 
   public ngOnInit(): void {
     this.userService.getUserById(this.randomUserID).subscribe({
@@ -29,6 +33,10 @@ export class ServiceDocumentationComponent implements OnInit {
   }
 
   public get randomUserID(): number {
-    return Math.floor(Math.random() * (10 - 1 + 1)) + 1
+    return Math.floor(Math.random() * (10 - 1 + 1)) + 1;
+  }
+
+  public callSnackbar(): void {
+    this.snackbarService.callSnackbar('Snackbar Service Example');
   }
 }

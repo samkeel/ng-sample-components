@@ -56,7 +56,8 @@ export class ComponentDocumentationComponent {
   @ViewChild(SnackbarComponent) public snackBar!: SnackbarComponent;
 
   public snackbarShow(): void {
-    this.snackBar.show();
+    // this.snackBar.show(); - component level
+    this.snackBar.showMessage('Snackbar Example'); // - service level
   }
 
 }
