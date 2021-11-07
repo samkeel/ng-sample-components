@@ -28,6 +28,7 @@ import { RibbonComponent } from './ribbon/ribbon.component';
 import { ButtonToggleComponent } from './button-toggle/button-toggle.component';
 import { BannerCutOutComponent } from './banner-cut-out/banner-cut-out.component';
 import { PopupComponent } from './popup/popup.component';
+import { CountdownTimerComponent } from './countdown-timer/countdown-timer.component';
 
 @NgModule({
   declarations: [
@@ -53,7 +54,8 @@ import { PopupComponent } from './popup/popup.component';
     RibbonComponent,
     ButtonToggleComponent,
     BannerCutOutComponent,
-    PopupComponent
+    PopupComponent,
+    CountdownTimerComponent
   ],
   imports: [
     CommonModule,
