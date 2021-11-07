@@ -8,6 +8,7 @@ import { SharedModule } from '../shared/shared.module';
 import { RippleDirective } from './ripple/ripple.directive';
 import { ScaleDirective } from './scale/scale.directive';
 import { CopyDirective } from './copy/copy.directive';
+import { LazyLoadImageDirective } from './lazy-load-image/lazy-load-image.directive';
 
 
 
@@ -17,7 +18,8 @@ import { CopyDirective } from './copy/copy.directive';
     DebounceClickDirective,
     RippleDirective,
     ScaleDirective,
-    CopyDirective
+    CopyDirective,
+    LazyLoadImageDirective
   ],
   imports: [
     CommonModule,
@@ -26,7 +28,8 @@ import { CopyDirective } from './copy/copy.directive';
   ],
   providers: [
     {provide: 'Navigator', useValue: navigator},
-    {provide: 'Document', useValue: document}
+    {provide: 'Document', useValue: document},
+    {provide: 'Window', useValue: window}
   ]
 })
 export class DirectivesModule { }
