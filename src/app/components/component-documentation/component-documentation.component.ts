@@ -5,6 +5,8 @@ import { LoaderType } from '../loader/models/loader-type.enum';
 import { RibbonLocation } from '../ribbon/ribbon-location.enum';
 import { RibbonType } from '../ribbon/ribbon-type';
 import { SnackbarComponent } from '../snackbar/snackbar.component';
+import { SocialMediaIcon } from '../social-media-bar/models/social-media-icon.interface';
+import { SocialMedia } from '../social-media-bar/models/social-media.enum';
 
 @Component({
   selector: 'app-component-documentation',
@@ -62,4 +64,27 @@ export class ComponentDocumentationComponent {
     this.snackBar.showMessage('Snackbar Example'); // - service level
   }
 
+  public socialMedia: SocialMediaIcon[] = [
+    {
+      href: '',
+      type: SocialMedia.Facebook,
+    },
+    {
+      href: '',
+      type: SocialMedia.Instagram,
+    },
+    {
+      href: 'https://www.linkedin.com/in/samkeel',
+      type: SocialMedia.LinkedIn,
+    },
+    {
+      href: '',
+      type: SocialMedia.Twitter,
+    },
+    {
+      href: '',
+      type: SocialMedia.YouTube,
+    },
+  ];
+  
 }
