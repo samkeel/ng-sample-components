@@ -12,7 +12,6 @@ import { CreditCardInputComponent } from './credit-card-input/credit-card-input.
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { TwitterPostComponent } from './twitter-post/twitter-post.component';
 import { LinkedinPostComponent } from './linkedin-post/linkedin-post.component';
-import { ModalComponent } from './modal/modal.component';
 import { QuoteComponent } from './quote/quote.component';
 import { ToggleComponent } from './toggle/toggle.component';
 import { RichTextViewerComponent } from './rich-text-viewer/rich-text-viewer.component';
@@ -21,7 +20,6 @@ import { SearchListComponent } from './search-list/search-list.component';
 import { CounterComponent } from './counter/counter.component';
 import { SimpleTableComponent } from './simple-table/simple-table.component';
 import { PagingComponent } from './paging/paging.component';
-import { TabsComponent } from './tabs/tabs.component';
 import { SortTableComponent } from './sort-table/sort-table.component';
 import { EmailFormComponent } from './email-form/email-form.component';
 import { RibbonComponent } from './ribbon/ribbon.component';
@@ -48,7 +46,6 @@ import { CountdownTimerComponent } from './countdown-timer/countdown-timer.compo
     CounterComponent,
     SimpleTableComponent,
     PagingComponent,
-    TabsComponent,
     SortTableComponent,
     EmailFormComponent,
     RibbonComponent,
