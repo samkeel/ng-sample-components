@@ -1,3 +1,21 @@
+<!-- Bottom sheet popup -->
+<app-main-card
+  [title]="'Bottom Sheet'"
+  [subTitle]="'Components'"
+  [iconClasses]="'fas fa-info-circle'"
+>
+  <div body>
+    <app-bottom-sheet #bottomSheet>
+      <h1 (click)="bottomSheet.hide()">Hello</h1>
+      <h1 (click)="bottomSheet.hide()">World</h1>
+    </app-bottom-sheet>
+
+    <div class="footer" footer>
+      <button (click)="bottomSheet.show()">Show</button>
+    </div>
+  </div>
+</app-main-card>
+
 <!-- Skeleton loader -->
 <app-main-card
   [title]="'Skeleton loader'"
