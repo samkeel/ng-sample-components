@@ -25,6 +25,8 @@ export class ComponentDocumentationComponent {
     },
   ];
 
+  public loaded = false;
+
   public progressValue = 25;
   public loaderType = LoaderType.Loading;
 
