@@ -2,6 +2,7 @@ import { Component, ViewChild } from '@angular/core';
 import { AccordionItem } from '../accordian/accordian-item.interface';
 import { ButtonMeta } from '../button-toggle/button-meta.model';
 import { LoaderType } from '../loader/models/loader-type.enum';
+import { PillType } from '../pill/pill-type.enum';
 import { RibbonLocation } from '../ribbon/ribbon-location.enum';
 import { RibbonType } from '../ribbon/ribbon-type';
 import { SnackbarComponent } from '../snackbar/snackbar.component';
@@ -86,5 +87,7 @@ export class ComponentDocumentationComponent {
       type: SocialMedia.YouTube,
     },
   ];
+
+  public PillType = PillType;
   
 }
