@@ -1,0 +1,12 @@
+<!-- use fieldset to group form components
+https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset -->
+
+<fieldset>
+  <legend (click)="toggle()">
+    <i [ngClass]="['fas', isOpen ? 'fa-minus' : 'fa-plus']"></i> {{ legend }}
+  </legend>
+
+  <div *ngIf="isOpen">
+    <ng-content></ng-content>
+  </div>
+</fieldset>
