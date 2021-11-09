@@ -18,5 +18,13 @@ export class PipeDocumentationComponent {
     this.flattenData = [...this.flattenData];
   }
 
+  // sort by - ascending and descending
   public stringArray: string[] = ['Courses', 'YouTube', 'Twitter', 'LinkedIn'];
+  // sort by key
+  public objectArray: { [key: string]: string; }[] = [
+    { content: 'Courses' },
+    { content: 'YouTube' },
+    { content: 'Twitter' },
+    { content: 'LinkedIn' },
+  ];
 }

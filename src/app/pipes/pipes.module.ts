@@ -9,6 +9,7 @@ import { CreditCardFormatterPipe } from './credit-card-formatter/credit-card-for
 import { FlattenPipePipe } from './flatten-pipe/flatten-pipe.pipe';
 import { RichTextPipe } from './rich-text/rich-text.pipe';
 import { SortByPipe } from './sort-by/sort-by.pipe';
+import { SortByKeyPipe } from './sort-by-key/sort-by-key.pipe';
 
 
 @NgModule({
@@ -17,7 +18,7 @@ import { SortByPipe } from './sort-by/sort-by.pipe';
     TruncatePipe,
     CreditCardFormatterPipe,
     FlattenPipePipe,    
-    RichTextPipe, SortByPipe
+    RichTextPipe, SortByPipe, SortByKeyPipe
   ],
   imports: [
     CommonModule,
