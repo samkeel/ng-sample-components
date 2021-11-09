@@ -1,69 +1,79 @@
-<!-- Filter text by terminology -->
-<app-main-card         
-    [title]="'Rich text'"
-    [subTitle]="'Pipes'"
-    [iconClasses]="'fas fa-info-circle'">
+<!-- Sort array of strings -->
+<app-main-card
+  [title]="'Sort by'"
+  [subTitle]="'Pipes'"
+  [iconClasses]="'fas fa-info-circle'"
+>
+  <div body>
+    <h5>String Ascending</h5>
+    <p>{{ stringArray | sortBy }}</p>
 
-    <div body>
-        <div [innerHtml]="html | richText"> </div>
-    </div>
-
+    <h5>String Descending</h5>
+    <p>{{ stringArray | sortBy: false }}</p>
+  </div>
 </app-main-card>
 
-
 <!-- Filter text by terminology -->
-<app-main-card         
-    [title]="'Filter Term'"
-    [subTitle]="'Pipes'"
-    [iconClasses]="'fas fa-info-circle'">
-
-    <div body>
-            {{ ['Hello', 'world', 'Hello World'] | pipeFilterTerm : 'hello'}}
-    </div>
-
+<app-main-card
+  [title]="'Rich text'"
+  [subTitle]="'Pipes'"
+  [iconClasses]="'fas fa-info-circle'"
+>
+  <div body>
+    <div [innerHtml]="html | richText"></div>
+  </div>
 </app-main-card>
 
+<!-- Filter text by terminology -->
+<app-main-card
+  [title]="'Filter Term'"
+  [subTitle]="'Pipes'"
+  [iconClasses]="'fas fa-info-circle'"
+>
+  <div body>
+    {{ ["Hello", "world", "Hello World"] | pipeFilterTerm: "hello" }}
+  </div>
+</app-main-card>
 
 <!-- flatten pipe -->
-<app-main-card         
-    [title]="'Flatten'"
-    [subTitle]="'Pipes'"
-    [iconClasses]="'fas fa-info-circle'">
+<app-main-card
+  [title]="'Flatten'"
+  [subTitle]="'Pipes'"
+  [iconClasses]="'fas fa-info-circle'"
+>
+  <div body>
+    {{ flattenData | flattenPipe }}
+  </div>
 
-    <div body>
-        {{ flattenData | flattenPipe}}
-      </div>
-   
-      <div class="footer" footer>
-        <button (click)="modifyFlatten()">Modify</button>
-        <button (click)="reassignFlatten()">Reassign</button>
-      </div>
-
+  <div class="footer" footer>
+    <button (click)="modifyFlatten()">Modify</button>
+    <button (click)="reassignFlatten()">Reassign</button>
+  </div>
 </app-main-card>
 
-
 <!-- credit card formatter -->
-<app-main-card         
-    [title]="'Credit Card Formatter'"
-    [subTitle]="'Pipes'"
-    [iconClasses]="'fas fa-info-circle'">
-
-    <div body>
-        <p>{{'1111222233334444' | creditCardFormatter}}</p>
-        <p>{{'111111111111111111111111111111' | creditCardFormatter}}</p>
-        <p>{{'a111222233334444' | creditCardFormatter}}</p>
-    </div>
-
+<app-main-card
+  [title]="'Credit Card Formatter'"
+  [subTitle]="'Pipes'"
+  [iconClasses]="'fas fa-info-circle'"
+>
+  <div body>
+    <p>{{ "1111222233334444" | creditCardFormatter }}</p>
+    <p>{{ "111111111111111111111111111111" | creditCardFormatter }}</p>
+    <p>{{ "a111222233334444" | creditCardFormatter }}</p>
+  </div>
 </app-main-card>
 
 <!-- Truncate -->
-<app-main-card         
-    [title]="'Truncate'"
-    [subTitle]="'Pipes'"
-    [iconClasses]="'fas fa-info-circle'">
-
-    <p body>
-        {{'Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore illum, necessitatibus similique ad eveniet ipsa possimus? Voluptas magnam reiciendis ipsum tenetur, facilis quidem suscipit, odit velit, cumque consectetur nisi repellendus?' | truncate }}
-    </p>
-
+<app-main-card
+  [title]="'Truncate'"
+  [subTitle]="'Pipes'"
+  [iconClasses]="'fas fa-info-circle'"
+>
+  <p body>
+    {{
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore illum, necessitatibus similique ad eveniet ipsa possimus? Voluptas magnam reiciendis ipsum tenetur, facilis quidem suscipit, odit velit, cumque consectetur nisi repellendus?"
+        | truncate
+    }}
+  </p>
 </app-main-card>
