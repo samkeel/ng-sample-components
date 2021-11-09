@@ -1,15 +1,40 @@
+<!-- Pill filter -->
+<app-main-card
+  [title]="'Pill Filter'"
+  [subTitle]="'Components'"
+  [iconClasses]="'fas fa-info-circle'"
+>
+  <div body>
+    <app-pill-filters
+      [pills]="['WA', 'SA', 'NT', 'TAS', 'NSW', 'VIC', 'QLD', 'ACT']"
+    ></app-pill-filters>
+  </div>
+</app-main-card>
+
 <!-- Pill -->
 <app-main-card
   [title]="'Pill'"
   [subTitle]="'Components'"
   [iconClasses]="'fas fa-info-circle'"
 >
-<div body>
-  <app-pill [type]="PillType.Error" [iconClasses]="'fas fa-tag'" [label]="'Error'"></app-pill>
-  <app-pill [type]="PillType.Info" [iconClasses]="'fas fa-tag'" [label]="'Info'"></app-pill>
-  <app-pill [type]="PillType.Success" [iconClasses]="'fas fa-tag'" [label]="'Success'"></app-pill>
-  <app-pill [type]="PillType.Warning" [label]="'Warning'"></app-pill>
-</div>
+  <div body>
+    <app-pill
+      [type]="PillType.Error"
+      [iconClasses]="'fas fa-tag'"
+      [label]="'Error'"
+    ></app-pill>
+    <app-pill
+      [type]="PillType.Info"
+      [iconClasses]="'fas fa-tag'"
+      [label]="'Info'"
+    ></app-pill>
+    <app-pill
+      [type]="PillType.Success"
+      [iconClasses]="'fas fa-tag'"
+      [label]="'Success'"
+    ></app-pill>
+    <app-pill [type]="PillType.Warning" [label]="'Warning'"></app-pill>
+  </div>
 </app-main-card>
 
 <!-- Fieldset -->
@@ -18,13 +43,11 @@
   [subTitle]="'Components'"
   [iconClasses]="'fas fa-info-circle'"
 >
-<div body>
-
-  <app-fieldset [legend]="'Address'">
-    <app-email-form></app-email-form>
-  </app-fieldset>
-
-</div>
+  <div body>
+    <app-fieldset [legend]="'Address'">
+      <app-email-form></app-email-form>
+    </app-fieldset>
+  </div>
 </app-main-card>
 
 <!-- Bottom sheet popup -->
