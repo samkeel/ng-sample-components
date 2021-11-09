@@ -4,9 +4,9 @@ import { ServiceDocumentationComponent } from './service-documentation/service-d
 import { RouterModule } from '@angular/router';
 import { SERVICE_ROUTES } from './services.routes';
 import { SharedModule } from '../shared/shared.module';
-import {HttpClientModule } from '@angular/common/http';
+import { HttpClientModule } from '@angular/common/http';
 import { UserService } from './user/user.service';
-
+import { LocalStorageService } from './local-storage/local-storage.service';
 
 @NgModule({
   declarations: [
@@ -16,8 +16,12 @@ import { UserService } from './user/user.service';
     CommonModule,
     SharedModule,
     HttpClientModule,
-    RouterModule.forChild(SERVICE_ROUTES)
+    RouterModule.forChild(SERVICE_ROUTES),
   ],
-  providers: [UserService]
+  providers: [
+    UserService,
+    LocalStorageService,
+    { provide: 'LocalStorage', useValue: window.localStorage }
+  ],
 })
-export class ServicesModule { }
+export class ServicesModule {}
