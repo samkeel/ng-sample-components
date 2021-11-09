@@ -34,6 +34,7 @@ import { FieldsetComponent } from './fieldset/fieldset.component';
 import { PillComponent } from './pill/pill.component';
 import { PillFiltersComponent } from './pill-filters/pill-filters.component';
 import { PasswordComponent } from './password/password.component';
+import { OverlayComponent } from './overlay/overlay.component';
 
 @NgModule({
   declarations: [
@@ -66,7 +67,8 @@ import { PasswordComponent } from './password/password.component';
     FieldsetComponent,
     PillComponent,
     PillFiltersComponent,
-    PasswordComponent
+    PasswordComponent,
+    OverlayComponent
   ],
   imports: [
     CommonModule,

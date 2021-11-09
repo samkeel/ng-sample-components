@@ -1,3 +1,15 @@
+<!-- Overlay -->
+<app-main-card
+  [title]="'Overlay'"
+  [subTitle]="'Components'"
+  [iconClasses]="'fas fa-info-circle'"
+>
+  <div body>
+    <app-overlay [isShown]="isShownOverlay" ></app-overlay>
+    <button (click)="isShownOverlay = true">Show Overlay</button>
+  </div>
+</app-main-card>
+
 <!-- password -->
 <app-main-card
   [title]="'Password'"

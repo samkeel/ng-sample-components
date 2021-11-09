@@ -89,5 +89,7 @@ export class ComponentDocumentationComponent {
   ];
 
   public PillType = PillType;
+
+  public isShownOverlay = false;
   
 }
