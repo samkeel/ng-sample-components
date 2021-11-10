@@ -1,13 +1,43 @@
 <div class="toolbar-container">
-    <h3>{{title}}</h3>
+  <h3>{{ title }}</h3>
 
-    <div class="content">
-        <ul>
-            <li routerLink="">Components</li>
-            <li routerLink="directives">Directives</li>
-            <li routerLink="services">Services</li>
-            <li routerLink="pipes">Pipes</li>
-            <li routerLink="others">Other</li>
-        </ul>
-    </div>
+  <div class="content">
+    <ul>
+      <li
+        routerLink=""
+        routerLinkActive="active"
+        [routerLinkActiveOptions]="{ exact: true }"
+      >
+        Components
+      </li>
+      <li
+        routerLink="directives"
+        routerLinkActive="active"
+        [routerLinkActiveOptions]="{ exact: true }"
+      >
+        Directives
+      </li>
+      <li
+        routerLink="services"
+        routerLinkActive="active"
+        [routerLinkActiveOptions]="{ exact: true }"
+      >
+        Services
+      </li>
+      <li
+        routerLink="pipes"
+        routerLinkActive="active"
+        [routerLinkActiveOptions]="{ exact: true }"
+      >
+        Pipes
+      </li>
+      <li
+        routerLink="others"
+        routerLinkActive="active"
+        [routerLinkActiveOptions]="{ exact: true }"
+      >
+        Other
+      </li>
+    </ul>
+  </div>
 </div>
