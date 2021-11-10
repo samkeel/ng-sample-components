@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import { map, mergeMap } from 'rxjs/operators';
 import { LocalStorageService } from '../local-storage/local-storage.service';
 import { SnackbarService } from '../snackbar/snackbar.service';
 import { User } from '../user/user.model';
@@ -13,11 +15,13 @@ export class ServiceDocumentationComponent implements OnInit {
   public user = new User();
   public userID = 1;
   public state: { [key: string]: any } = {};
+  public userIdExample = new User();
 
   constructor(
     public userService: UserService,
     public snackbarService: SnackbarService,
-    public localStorageService: LocalStorageService
+    public localStorageService: LocalStorageService,
+    public route: ActivatedRoute
   ) {}
 
   public ngOnInit(): void {
@@ -38,6 +42,16 @@ export class ServiceDocumentationComponent implements OnInit {
       this.state = data;
     });
 
+    this.route.params
+      .pipe(
+        map((params) => params.id),
+        mergeMap((id) => this.userService.getUserById(id))
+      )
+      .subscribe({
+        next: (value) => {
+          this.userIdExample = value;
+        },
+      });
   }
 
   public get randomUserID(): number {
