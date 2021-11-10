@@ -1,3 +1,22 @@
+<!-- AutoFocus -->
+<app-main-card
+  [title]="'Auto-focus'"
+  [subTitle]="'Directives'"
+  [iconClasses]="'fas fa-info-circle'"
+>
+  <div body>
+    <app-modal #modal>
+      <div *ngIf="!modal.isHidden">
+        <input type="text" appAutoFocus />
+      </div>
+    </app-modal>
+  </div>
+
+  <div footer class="footer">
+    <button (click)="modal.open()">Call Modal</button>
+  </div>
+</app-main-card>
+
 <!-- Copy -->
 <app-main-card
   [title]="'Copy'"
@@ -66,8 +85,11 @@
   [iconClasses]="'fas fa-info-circle'"
 >
   <div body>
-    <img appLazyLoadImage width="500px"
-       src="https://images.unsplash.com/photo-1630483264555-a6d025ed6a0f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=687&q=80"
-       alt="">
+    <img
+      appLazyLoadImage
+      width="500px"
+      src="https://images.unsplash.com/photo-1630483264555-a6d025ed6a0f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=687&q=80"
+      alt=""
+    />
   </div>
 </app-main-card>
